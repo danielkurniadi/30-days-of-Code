@@ -1,3 +1,14 @@
+class ImprovedSolution:
+    # @param A : list of integers
+    # @return a list of list of integers
+    def subsets(self, Arr):
+        self.SIZE = len(Arr)
+        return sorted(self.subset_recursive([], sorted(Arr)))
+    
+    def subset_recursive(self, chosen, remaining):
+        if len(remaining) == 0:
+            return [chosen]        
+        return self.subset_recursive(chosen, remaining[1:]) + self.subset_recursive(chosen+[remaining[0]], remaining[1:])
 
 class BruteSolution:
     # @param A : list of integers
