@@ -16,6 +16,9 @@
 *.dylib
 *.dll
 
+# Python cache
+*.pyc
+
 # Fortran module files
 *.mod
 *.smod
