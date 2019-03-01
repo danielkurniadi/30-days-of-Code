@@ -33,7 +33,8 @@ class Solution:
                 pretty_json += '\n'
                 is_newline = True
             i +=1
-        print(pretty_json)
+        pretty_json += '\n'
+        print([line for line in pretty_json.split('\n') if line and (line not in "\"\'")] )
 
 if __name__ == '__main__':
     solver = Solution()
