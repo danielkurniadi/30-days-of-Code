@@ -1,7 +1,8 @@
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+from sys import path
+from os.path import dirname as dir
+sys.path.append(dir(path[0]))
+
+from utils.models import Node, LinkedList
 
 class IterativeSolution:
     """
